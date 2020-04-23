@@ -150,7 +150,7 @@
                         <div class="icon">
                             <i class="flaticon-helmet"></i>
                         </div>
-                        <h3>Talented Peoples</h3>
+                        <h3>Talented People</h3>
                         <p>Our team members are passionate about providing clients with the highest-quality service possible.</p>
                     </div>
                 </div>
@@ -336,3 +336,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
+
+<script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "5b7aa15c-3918-4e01-bfcd-fb0a8f9fafed", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
