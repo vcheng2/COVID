@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>WikiBot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('http://6iee.com/data/uploads/23/761452.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+h1, ul, li {
+text-align:center
+}
+p {
+text-align:center
+}
+</style>
+<head>
+<script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+  </head>
+<body>
+<h1> Watson Wikipedia Bot</h1>
+  <p>You’ll build a chatbot that gives definitions of not only a given set of entities, <br/>but the whole world of Wikipedia. We will make external API callouts from Watson Assistant <br/> using Webhooks to get definitions for contextual entities from Wikipedia.</p>
+  
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  
+</div>
+
+</body>
+</html>
+
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "698ef41f-00d6-41a6-9b17-4acbee4281aa", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    openChatByDefault: true
+  
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
