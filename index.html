@@ -337,13 +337,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </html>
 
-<script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
 <script>
-  window.loadWatsonAssistantChat({
-    integrationID: "5b7aa15c-3918-4e01-bfcd-fb0a8f9fafed", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-
-  }).then(function(instance){
-    instance.render();
+  window.watsonAssistantChatOptions = {
+      integrationID: "02624a0d-02e0-4466-aae9-38171f10759a", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "89db2536-75a6-47bc-b94a-6543c200c603", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
   });
 </script>
